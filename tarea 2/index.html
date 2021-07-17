@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Brunella Bernat</title>
+</head>
+<body>
+    <h1>Brunella Bernat</h1> 
+    <img src="caraa.jpg" alt="Mi cara">
+
+    <div>
+     <h3>Contacto</h3>
+     <ul>
+         <li>brunella.bernat23@gmail.com</li>
+         <li>011 5717 7000</li>
+         <li><a href="https://www.instagram.com/brune.bernat/" target="_blank">Instagram</a></li>
+     </ul>
+    </div>
+    <div>
+     <h3>Idiomas</h3>
+     <ul>
+         <li>Español</li>
+         <li>Ingles</li>
+     </ul>
+    </div>
+    <div>
+        <h2>Formulario de contacto</h2>
+        <form action="" method="">
+            <p>
+                <label for="Nombre">Usuario</label>
+               <input type="text" name="Nombre" placeholder="Nombre" />
+         
+               <input type="text" name="apellido" placeholder="Apellido" />
+           </p>
+           <p>
+               <label for="pass">Contraseña</label>
+               <input type="password" name="pass" placeholder="**********" />
+           </p>
+           <label>Sexo</label>
+           <ul>
+               <li>
+                   <input type="radio" name="Sexo" value="Hombre" />
+                   <label>Hombre</label>
+               </li>
+
+               <li>
+                  <input type="radio" name="Sexo" value="Mujer" />
+                  <label>Mujer</label>
+               </li>
+               <li>
+                   <input type="radio" name="Sexo" value="Otro" />
+                   <label>Otro</label>
+               </li>
+           </ul>
+           <label>Hobbies</label>
+           <ul>
+               <li>
+                   <input type="checkbox" name="hobbies[]" value="correr" id=correr />
+                   <label>Correr</label>
+              </li>
+              <li>
+                  <input type="checkbox" name="hobbies[]" value="cantar" id="cantar" />
+                  <label>Cantar</label>     
+                </li>
+                <li>
+                    <input type="checkbox" name="hobbies[]" value="bailar" id="bailar" />
+                    <label>Bailar</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="hobbies[]" value="otro" id="otro" />
+                    <label>Otro</label>
+                    <input type="text" name="cual"/> 
+                </li>
+           </ul>
+           <p>
+               <label for="titulo">Titulo</label>
+               <select name="titulo">
+                   <option value="primario">Primario</option>
+                   <option value="secundario">Secundario</option>
+                   <option value= "terciario">Terciario</option>
+                   <option value="Universitario">Universitario</option>
+               </select>
+           </p>
+           
+           <p>
+               <label for="comentarios">Comentarios</label>
+               <br>
+               <textarea name="comentarios"></textarea>
+           </p>
+           <p>
+               <input type="submit" value="Enviar" />
+               <input type="reset" value="Borrar" />
+           </p>
+        </form>
+    </div>
+ 
+</body>
+</html>
