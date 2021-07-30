@@ -1,0 +1,17 @@
+*{
+    background-color: rgb(3, 50, 94);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.item{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(254, 254, 255, 0.452);
+    padding:20px;
+    
+}
+.container{
+   margin-bottom: 30px;
+}
+ h1{
+    background-color: rgba(254, 254, 255, 0.452);
+ }
