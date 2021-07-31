@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculador de distancia</title>
+</head>
+
+<body>
+
+    <script>
+        var distancia;
+        distancia = prompt('Ingrese distancia en metros a recorrer')
+
+        if (distancia <= 1000) {
+            document.write('Debe realizar el recorrido a pie');
+        }
+        else if (distancia > 1000 && distancia <= 10000) {
+            document.write('Debe realizar recorrido en bicicleta');
+        }
+        else if(distancia >10000 && distancia <=30000) {
+                  document.write('Debe realizar recorrido en colectivo');
+        }
+        else if(distancia >30000 && distancia <=100000) {
+                  document.write('Debe realizar recorrido en auto');
+        }
+        else {
+                  document.write('Debe realizar recorrido en avion');
+        }
+
+        
+
+
+
+
+    </script>
+</body>
+
+</html>
