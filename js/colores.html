@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Colores</title>
+    <style>
+        .cuadrado{
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 70px;
+            background-color: rgb(255, 255, 255);
+            padding: 15px;
+            color: rgb(14, 13, 13);
+        }
+      
+    </style>
+</head>
+<body>
+    <button id="rojo" class="cuadrado">Rojo</button>
+    <button id="verde" class="cuadrado">Verde</button>
+    <button id="azul" class="cuadrado">Azul</button>
+    <script>
+    
+     var rojo = document.getElementById('rojo')
+     rojo.addEventListener('click', function(){
+          rojo.style.backgroundColor= '	#ff0000'
+          rojo.style.color='#ffffff'
+     });
+     var verde = document.getElementById('verde')
+     verde.addEventListener('click', function(){
+          verde.style.backgroundColor= '#008000'
+          verde.style.color='#ffffff'
+     });
+     var azul = document.getElementById('azul')
+    azul.addEventListener('click', function(){
+          azul.style.backgroundColor= '#000080'
+          azul.style.color='#ffffff'
+     });
+    </script>
+    
+</body>
+</html>
