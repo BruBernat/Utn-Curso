@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Rampart+One&display=swap" rel="stylesheet">
+  <link href="css/estilos.css" rel="stylesheet">
+  <title>Baikis</title>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a style="font-family: 'Rampart One', cursive; color: rgb(247, 117, 10);" class="navbar-brand" href="#">
+        <img src="img/bike logo.png" width="30" height="24" class="d-inline-block align-text-top">
+        BAIKIS
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contactos</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Locales
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Parque Chacabuco</a></li>
+              <li><a class="dropdown-item" href="#">Haedo</a></li>
+              <li><a class="dropdown-item" href="#">Caballito</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <form class="d-flex">
+        <input class="barra" type="search" placeholder="Buscar" aria-label="Search">
+        <button class="barra" type="submit" style="background-color: rgb(247, 117, 10);;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+            fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path
+              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+          </svg></button>
+      </form>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div class="row align-items-center hero">
+      <div class="col">
+        <p>Nosotros</p>
+        <h1>BAIKIS</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla tempora delectus ex itaque! Ex et, incidunt
+          esse doloribus rerum deleniti blanditiis vitae! Animi minima reiciendis deserunt ratione veniam optio
+          nihil!Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur sint, enim dignissimos iusto debitis
+          numquam consequatur laboriosam natus odit neque nam voluptatem voluptate inventore culpa nesciunt, hic non
+          explicabo. Quam.
+        </p>
+      </div>
+      <div class="col"></div>
+      <div class="col"></div>
+
+    </div>
+    <div id="partes" class="container-fluid">
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-4">
+          <h2 style="color:rgb(247, 117, 10);">Partes</h2>
+          <ul class="lista">
+            <li><a href="#" data-bs-toggle="modal" data-bs-target="#Ruedas">
+                <p><img src="img/ruedas.jpg">Ruedas</p>
+              </a></li>
+            <li><a href="#" data-bs-toggle="modal" data-bs-target="#Asiento">
+                <p><img src="img/asiento.jpg">Asiento</p>
+              </a></li>
+            <li><a href="#" data-bs-toggle="modal" data-bs-target="#Manubrio">
+                <p><img src="img/manubrio.jpg">Manubrio</p>
+              </a></li>
+          </ul>
+        </div>
+        <div class="col-md-1"></div>
+
+          <div class="col-md-4">
+            <h3 style="color:rgb(247, 117, 10);">Modelos</h3>
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                  <img src="../misitioX/img/montain.jpg" class="d-block w-100" alt="..." style="height: 300px;">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h4 style="background-color:rgb(247, 117, 10);">Mountain</h4>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img src="../misitioX/img/playera.jpeg" class="d-block w-100" alt="..." style="height: 300px;">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h4 style="background-color:rgb(247, 117, 10);">Playera</h4>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="../misitioX/img/cannondale-caad13-disc-105-2020-road-bike-red-EV360802-3000-1.jpg" class="d-block w-100" alt="..." style="height: 300px;">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h4 style="background-color:rgb(247, 117, 10);">Carrera</h4>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        
+      </div>
+      <div class="modal fade" id="Ruedas" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="staticBackdropLabel">Ruedas</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img class="imgmodal" src="img/ruedas.jpg">
+              <p>La rueda de bicicleta es una rueda diseñada para bicicletas. Está compuesta de un neumático de
+                caucho,
+                en cuyo interior va una cámara de aire (también de caucho) montado sobre una llanta, un buje central
+                y
+                los radios que conectan ambos.</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="Asiento" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="staticBackdropLabel">Ruedas</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img class="imgmodal" src="img/asiento.jpg">
+              <p>Un sillín de bicicleta, también denominado asiento, es uno de los tres puntos de contacto en una
+                bicicleta, los otros son los pedales y el manillar. El sillín de la bicicleta ha sido conocido como
+                tal desde que la bicicleta evolucionó a partir del «hobby-horse», un precursor de la bicicleta. </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="Manubrio" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="staticBackdropLabel">Ruedas</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img class="imgmodal" src="img/manubrio.jpg">
+              <p>El manillar de una bicicleta o motocicleta, llamado en algunos países manubrio​ de motocicleta o
+                bicicleta, se refiere al mecanismo de dirección para las bicicletas, el equivalente de un volante.
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div>
+
+      </div>
+
+
+      <footer class="container-xxl">
+        <p class="text-center">BRUNELLA_BERNAT&_Co(2021)</p>
+        <div>
+          <div class="row align-items-center">
+            <div class="col">
+              <p>|Whatsapp| <br />+54 911 3456789</p>
+            </div>
+            <div class="col">
+              <p>|Locales|<br />
+                chacabuco</p>
+            </div>
+            <div class="col">
+              <p>|dfghj|</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
