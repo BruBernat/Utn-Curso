@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="span">
 
 <head>
   <meta charset="UTF-8">
@@ -16,8 +16,9 @@
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-      <a style="font-family: 'Rampart One', cursive; color: rgb(247, 117, 10);" class="navbar-brand" href="#">
+      <a style="font-family: 'Rampart One', cursive; color: rgb(247, 117, 10);" class="navbar-brand" data-scroll href="index.html">
         <img src="img/bike logo.png" width="30" height="24" class="d-inline-block align-text-top">
+
         BAIKIS
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -27,13 +28,13 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Nosotros</a>
+            <a class="nav-link active" aria-current="page" data-scroll href="nosotros.html">Nosotros</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Productos</a>
+            <a class="nav-link" data-scroll href="#partes">Partes</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contactos</a>
+            <a class="nav-link" data-scroll href="contactos.html">Contactos</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
@@ -41,7 +42,7 @@
               Locales
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="#">Parque Chacabuco</a></li>
+              <li><a class="dropdown-item" data-scroll href="mapa.html">Parque Chacabuco</a></li>
               <li><a class="dropdown-item" href="#">Haedo</a></li>
               <li><a class="dropdown-item" href="#">Caballito</a></li>
             </ul>
@@ -215,6 +216,10 @@
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
         crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0/dist/smooth-scroll.polyfills.min.js"></script>
+        <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+        </script>
 </body>
 
 </html>

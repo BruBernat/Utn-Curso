@@ -84,6 +84,15 @@ list-style: none;
 .imgmodal{
  padding-left: 100px;
 }
+.card-body{
+    margin:20px 100px;
+}
+.imgnosotros{
+    margin-bottom: 20px;
+}
+.map{
+    
+}
 footer{
     background-size:cover;
     background: url(../img/footer.jpg);
