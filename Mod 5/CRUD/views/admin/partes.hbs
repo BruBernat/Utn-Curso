@@ -1,0 +1,50 @@
+<div class="container-fluid">
+  <div class="row align-items-start">
+    <div class="col">
+    </div>
+    <div class="col">
+    </div>
+    <div class="col">
+      <p class="text-end" style='font-size: 15px; margin-top:5px;' ;>{{usuario}}
+        <a href="/admin/login/logout"><button style="margin: 5px;" type="button" class="btn btn-secondary btn-sm">Cerrar
+            Sesión</button></a>
+      </p>
+    </div>
+  </div>
+  <div class="row align-items-center" style="background-color: rgb(196, 196, 196); margin:5px;">
+    <div class="col">
+      <h1>Listado de partes</h1>
+    </div>
+
+    <div class="col">
+      <a href="/admin/partes/agregar"><p class="text-end" style="color: white; margin:5px;"><button type="button" class="btn btn-success">+
+          Nuevo</button></p></a>
+    </div>
+    
+</div>
+
+<div style="margin: 15px;">
+     <table class="table">
+  <thead>
+    <tr style="background-color: rgb(255, 142, 77);">
+      <th scope="col">#</th>
+      <th scope="col">Nombre</th>
+      <th scope="col" class="text-end">Acciones</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    {{#each partes}}
+    <tr>
+      <th scope="row">{{id}}</th>
+      <td>{{nombre}}</td>
+      <td class="text-end">
+     <a href="/admin/partes/editar/{{id}}" class="btn btn-info" style="color: white; font-family: 'Fjalla One'">Editar</a>
+      <a href="/admin/partes/eliminar/{{id}}" class="btn btn-info" style="color: white; font-family: 'Fjalla One'">Borrar</a> 
+      </td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+  </div>
+

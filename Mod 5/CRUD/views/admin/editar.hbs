@@ -1,0 +1,29 @@
+<div class="container-fluid">
+    <div class="row align-items-center">
+        <div class="col">
+        </div>
+        <div class="col">
+            <div>
+                <h2 class="text-center" style="margin: 10px;">Editar Partes</h2>
+            </div>
+            <form action="/admin/partes/editar" method="post">
+                <div class="form-floating mb-3">
+                    <input type="hidden" value="{{partes.id}}" name="id">
+                    <div style="margin: 10px;">
+                        <input type="text" class="form-control" id="floatingInput" value="{{partes.nombre}}" placeholder="Nombre" name="nombre">
+                    </div>
+                    <div style="margin: 10px;">
+                        <textarea class="form-control" placeholder="Cuerpo" name="cuerpo" id="floatingTextarea2"
+                            style="height: 100px">{{partes.cuerpo}}</textarea>
+                    </div>
+                    <p class="text-center"><button type="submit" class="btn btn-success">Editar</button></p>
+                </div>
+            </form>
+            {{#if error}}
+            <p>{{message}}</p>
+            {{/if}}
+        </div>
+        <div class="col">
+        </div>
+    </div>
+</div>
